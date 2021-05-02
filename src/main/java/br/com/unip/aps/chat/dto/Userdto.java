@@ -27,12 +27,12 @@ public class Userdto {
 		this.senha = senha;
 	}
 	
-	public User toUsuario() {
-		User usuario = new User();
-		usuario.setNome(nome);
-		usuario.setSenha(senha);
-		usuario.setEmail(email);
-		return usuario;
+	public User toUser() {
+		User user = new User();
+		user.setNome(nome);
+		user.setSenha(senha);
+		user.setEmail(email);
+		return user;
 	}
 
 }

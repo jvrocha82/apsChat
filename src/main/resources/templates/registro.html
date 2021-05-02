@@ -5,8 +5,9 @@
     <!-- Nossos css-->
     <link rel="stylesheet" type="text/css" href="./css/custom.css" media="screen" />
 
-    <!-- Nosso js-->
-    <script type="text/javascript" src="../index.js"></script>
+	<!-- Thymeleaf -->
+	<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  	xsi:schemaLocation="http://www.thymeleaf.org ">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -21,11 +22,11 @@
 <body class="cadastroBody">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img class="headerChatIcon" src="./images/chat_icon.png">
-        <a href="/index" class="navbar-brand mr-auto navLogo">FastChat</a>
+        <a href="./index.html" class="navbar-brand mr-auto navLogo">FastChat</a>
 
 
         <form class="form-inline my-2 my-lg-0">
-          <a href="/login" class="btn btn-outline-success btn-login" type="submit">Login</a>
+            <a href="./login.html" class="btn btn-outline-success btn-login" type="submit">Login</a>
 
 
 
@@ -35,33 +36,33 @@
 
     <div class="d-flex flex-column align-items-center ">
         <div class="form-login">
-        <form class="form-Body">
-            <div class="form-group">
-                <label for="exampleInputEmail1"><h2>Cadastro</h2></label>
+            <form action = "/registro" method = "POST", class="form-Body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><h2>Cadastro</h2></label>
 
-              </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Endereço de e-mail</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-              <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu e-mail, com ninguém.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Nome</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome">
-              </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Senha</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Confirme sua senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-              </div>
-     
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
-          </form>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Endereço de e-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu e-mail, com ninguém.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Nome</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Confirme sua senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
     </div>
-</div>
 </body>
 
 </html>
