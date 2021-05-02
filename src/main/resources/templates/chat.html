@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Nossos css-->
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" media="screen" />
+
+    <!-- Nosso js-->
+    <script type="text/javascript" src="../index.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="chatComponent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img class="headerChatIcon" src="./images/chat_icon.png">
+        <a href="/index" class="navbar-brand mr-auto navLogo">FastChat</a>
+        <form class="form-inline my-2 my-lg-0">
+   
+        </form>
+    </nav>
+    <div class="row d-flex justify-content-center chatBody">
+        <div class="col-md-2 chatLeftSide p-0">
+            <div class="headerContactsList d-flex align-items-center p-2">Nome do Usuário </div>
+            <div class="d-flex p-2 align-items-center contactItem">Pessoa 1</div>
+            <div class="d-flex p-2 align-items-center contactItem">Pessoa 2</div>
+            <div class="d-flex p-2 align-items-center contactItem">Pessoa 3</div>
+        </div>
+        <div class="col-md-7 p-0 chatRightSide">
+            <div class="col-md-12 d-flex align-items-center p-2 chatHeader">Pessoa 2</div>
+            <div class="d-flex justify-content-center chatStructure">
+                <div class="col-md-10 Chat d-flex flex-column-reverse bd-highlight ">
+                    <div class="p-1 d-flex align-items-center message send"><p class="p-1">Ola João</p></div>
+                    <div class="p-1 message response"><p class="p-1">Oi iae</p></div>
+                    <div class="p-1 message send"><p class="p-1">Novidades ?</p></div>
+                    <div class="p-1 message response"><p class="p-1">Como esta a familia ?</p></div>
+                    <div class="p-2 message send"><p class="p-1">Esta Bem</p ></div>
+              
+                </div>
+            </div>
+            <div class="col-md-12 messageArea d-flex justify-content-center align-content-between align-items-center">
+                <input class="col-md-9 input-group-text inputChat" type="text">   
+                <button type="button" class="col-md-2 btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
