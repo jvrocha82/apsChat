@@ -1,4 +1,4 @@
-package br.com.unip.aps.chat.Controller;
+package br.com.unip.aps.chat.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,18 +15,17 @@ public class RegisterController {
 	@Autowired
 	private UserRepository repository;
 	
-	@RequestMapping(value ="/registro", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET, value ="/registro")
 	public String registroPage() {
 		return "registro";
 
 	}
-	@RequestMapping(value ="/registro", method = RequestMethod.POST)
+	@RequestMapping(method = RequestMethod.POST, value ="/formregistro")
 	public String registroPage( Userdto userdto) {
-
 		User user = userdto.toUser();
 		repository.save(user);
 		
-		return "redirect:/registro";
+		return "registro";
 	}
 
 	

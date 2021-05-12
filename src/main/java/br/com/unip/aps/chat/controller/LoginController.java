@@ -1,4 +1,4 @@
-package br.com.unip.aps.chat.Controller;
+package br.com.unip.aps.chat.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,4 +11,12 @@ public class LoginController {
 	public String loginPage() {
 		return "login";
 	}
+	
+	@RequestMapping(value = "login",method = RequestMethod.POST)
+	public String login (){
+		
+		return "login";
+	}
+	
+	
 }

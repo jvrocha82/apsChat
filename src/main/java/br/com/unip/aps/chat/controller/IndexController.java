@@ -1,4 +1,4 @@
-package br.com.unip.aps.chat.Controller;
+package br.com.unip.aps.chat.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
