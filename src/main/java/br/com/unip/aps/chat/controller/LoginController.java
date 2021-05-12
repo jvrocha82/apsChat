@@ -15,7 +15,7 @@ public class LoginController {
 	@RequestMapping(value = "login",method = RequestMethod.POST)
 	public String login (){
 		
-		return "login";
+		return "chat";
 	}
 	
 	
