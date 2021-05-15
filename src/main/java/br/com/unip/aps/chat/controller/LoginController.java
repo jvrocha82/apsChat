@@ -24,10 +24,10 @@ public class LoginController {
 		auth.UsuarioExiste(userdto);
 		
 		if(auth.UsuarioExiste(userdto) == true) {
-		return "chat";
+		return "redirect:/chat";
 	}
 		else {
-			return "login";
+			return "redirect:/registro";
 		}
 	}
 	
