@@ -11,7 +11,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer { // In
 	// Método que registramos um endpoint de websocket que os clientes usarão para se conectar ao nosso servidor de websocket
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) { // A palavra STOMP no nome do método, vêm da implementação STOMP de frameworks Spring. STOMP significa Simple Text Oriented Messaging Protocol. É um protocolo de mensagens que define o formato e as regras para troca de dados
-        registry.addEndpoint("/websocketApp").withSockJS(); // Usado para habilitar opções de fallback para navegadores que não suportam websocket
+        registry.addEndpoint("/chat").withSockJS(); // Usado para habilitar opções de fallback para navegadores que não suportam websocket
     }
 
     // Configuração de um agente de mensagens que será usado para rotear mensagens de um cliente para outro. Permite que um intermediário de mensagem rabbitmq transporte as mensagens de volta para o cliente em destinos prefixados com “/topic”

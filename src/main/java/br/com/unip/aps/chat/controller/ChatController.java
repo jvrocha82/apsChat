@@ -5,13 +5,11 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.unip.aps.modelo.ChatMessage;
 
 // Métodos de tratamento de mensagens em nosso controlador. Esses métodos serão responsáveis ​​por receber mensagens de um cliente e depois transmiti-las a outros.
 @Controller
-@RequestMapping("/chat")
 public class ChatController { // Foi configurado o websocket de forma que todas as mensagens provenientes do
 								// cliente com o prefixo “/app” sejam roteadas para os métodos de tratamento de
 								// mensagens apropriados anotados com @MessageMapping.
