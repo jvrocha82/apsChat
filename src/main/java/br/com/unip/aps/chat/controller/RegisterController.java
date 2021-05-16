@@ -15,6 +15,8 @@ public class RegisterController {
 	@Autowired
 	private UserRepository repository;
 	
+	
+	
 	@RequestMapping(method = RequestMethod.GET, value ="/registro")
 	public String registroPage() {
 		return "registro";

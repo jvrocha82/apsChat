@@ -1,5 +1,9 @@
 package br.com.unip.aps.chat.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,10 +24,11 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value = "login",method = RequestMethod.POST)
-	public String login (Userdto userdto ){
+	public String login (Userdto userdto){
 		auth.UsuarioExiste(userdto);
 		
 		if(auth.UsuarioExiste(userdto) == true) {
+
 		return "redirect:/chat";
 	}
 		else {
